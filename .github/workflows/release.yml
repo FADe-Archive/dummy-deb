@@ -14,7 +14,7 @@ jobs:
       - name: Get time
         id: get-date
         run: |
-          echo ::set-output name=date::$(/bin/date -u "+%Y%m%d")
+          echo ::set-output name=date::$(/bin/date -u "+%Y%m%d%H%m%S")
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Build project # This would actually build your project, using zip for an example artifact
